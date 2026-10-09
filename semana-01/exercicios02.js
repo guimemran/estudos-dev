@@ -64,4 +64,4 @@ console.log(`Salário bruto: ${horasTrabalhadas * valorHora}`);
 // Resultado esperado: 1h 2min 5s
 const tempoEmSegundos = 3725;
 console.log(`Tempo total em segundos: ${tempoEmSegundos}.`);
-console.log(`Conversão: ${Math.floor(3725/3600)}h ${Math.floor((tempoEmSegundos - 3600) / 60)}min ${(tempoEmSegundos - 3600) % 60}s`);
+console.log(`Conversão: ${Math.floor(tempoEmSegundos/3600)}h ${Math.floor((tempoEmSegundos%3600)/60)}min ${tempoEmSegundos % 60}s`);
